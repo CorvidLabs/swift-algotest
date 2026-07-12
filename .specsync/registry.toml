@@ -1,0 +1,5 @@
+[registry]
+name = "swift-algotest-trust-wave8"
+
+[specs]
+algotest = "specs/algotest/algotest.spec.md"

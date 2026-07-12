@@ -1,0 +1,15 @@
+{
+  "bootstrap_policy": {
+    "base_commit": "d16d34ad24f93c2ac4985fe8b354664f826d4c7e",
+    "digest": "17da9387d2f3e8e96682c32e539ea1f1797adbdbd784e02c47b0c608ada2b8a1",
+    "path": ".specsync/sdd.json"
+  },
+  "generated_at": 1783885121,
+  "requirements_needing_ids": [
+    {
+      "action": "review and assign one stable ID per durable requirement",
+      "path": "specs/algotest/requirements.md",
+      "suggested_first_id": "REQ-algotest-001"
+    }
+  ]
+}

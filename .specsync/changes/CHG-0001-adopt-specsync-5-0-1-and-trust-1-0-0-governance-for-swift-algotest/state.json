@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+  "slug": "adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+  "title": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for Swift AlgoTest",
+  "description": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for Swift AlgoTest",
+  "kind": "migration",
+  "state": "draft",
+  "base_commit": "d16d34ad24f93c2ac4985fe8b354664f826d4c7e",
+  "created_at": 1783885270,
+  "updated_at": 1783885286,
+  "affected_specs": [
+    "algotest"
+  ],
+  "affected_paths": [
+    "Sources/",
+    "Tests/",
+    "Package.swift",
+    "Package.resolved",
+    "fledge.toml",
+    ".github/",
+    ".specsync/",
+    "specs/",
+    ".trust.toml",
+    ".augur.toml",
+    ".attest.json",
+    "AGENTS.md"
+  ],
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
+  "acceptance_criteria": [
+    "Strict SpecSync passes at advisory threshold 0; all four agent integrations are installed; Trust doctor passes; Swift build and all 83 deterministic tests pass; macOS",
+    "Linux",
+    "dependencies",
+    "DocC",
+    "and live sandbox boundaries remain intact"
+  ],
+  "selected_artifacts": [
+    "context",
+    "research",
+    "design",
+    "plan",
+    "tasks",
+    "testing",
+    "docs"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "yes",
+    "public_contract": "no"
+  }
+}
