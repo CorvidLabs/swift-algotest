@@ -1,0 +1,19 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974786,
+      "digest": "53773602029a2a7059501afbcd0f3ed5333d25d25a10d1a7a77006808c7f5024",
+      "note": "Reviewed the frozen-resolution correction: main's lockfile is preserved, both build and all 83 tests pass without automatic resolution, and no dependency constraint, source, test, API, or canonical requirement changes."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974814,
+      "digest": "7c57ab487487fe9b3cfdb3603f72dbcecf24aa5473be40a02cd9a1b02e03fad2",
+      "note": "Frozen-resolution lane verified without changing Package.resolved: Swift builds, all 83 tests pass, strict SpecSync remains 100 percent, and no source, test, dependency, API, or canonical requirement changes remain."
+    }
+  ],
+  "reopenings": []
+}

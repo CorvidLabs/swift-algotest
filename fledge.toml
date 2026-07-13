@@ -1,7 +1,7 @@
 # fledge.toml — project task definitions
 [tasks]
-build = "swift build"
-test = "swift test"
+build = "swift build --disable-automatic-resolution"
+test = "swift test --disable-automatic-resolution"
 
 [lanes.verify]
 description = "Build and test AlgoTest without implicitly starting live sandbox infrastructure"

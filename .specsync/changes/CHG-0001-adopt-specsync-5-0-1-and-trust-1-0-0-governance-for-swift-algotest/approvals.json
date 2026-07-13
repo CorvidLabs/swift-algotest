@@ -41,6 +41,13 @@
       "timestamp": 1783974363,
       "digest": "4f19de9a998e00a8cea79543ed8f5a98a15f624ce1ee30a0c3b4af6b2a2169e6",
       "note": "Final adoption refresh after all review corrections: Package.resolved matches main, strict SpecSync remains 100 percent, Swift builds, and all 83 tests pass. The accepted full-contract successor remains authoritative over historical threshold-zero adoption text."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974919,
+      "digest": "8a2ed5803406307248f4dd67aca73f10468f6a4126c12e1ef1bbafcf233b79e1",
+      "note": "Accepted after final native verification passed: frozen SwiftPM build and all 83 tests succeeded against the final governed tree."
     }
   ],
   "reopenings": [
@@ -179,6 +186,40 @@
       },
       "stale_acceptance_input_digest": "a0960b61681a9411e6f8ea56394b3873b3c7b49c51cf8cd3e1bea5b0abe8c834",
       "current_acceptance_input_digest": "1340fdcbc890cec9f5c1f1c5ea6c4d02364493289fac3d9fce82f63d5b46d6fb"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "Later accepted migration corrections changed governed agent paths and verification configuration, so the original delivery evidence must be reverified against the final tree.",
+      "timestamp": 1783974893,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783974363,
+        "digest": "4f19de9a998e00a8cea79543ed8f5a98a15f624ce1ee30a0c3b4af6b2a2169e6",
+        "note": "Final adoption refresh after all review corrections: Package.resolved matches main, strict SpecSync remains 100 percent, Swift builds, and all 83 tests pass. The accepted full-contract successor remains authoritative over historical threshold-zero adoption text."
+      },
+      "prior_verification": {
+        "timestamp": 1783974356,
+        "commit": "9fe4b1527a92985c528f4c338d0426c37d73c76e",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "fa534acb2245b86e2541d9b23cc498ee2ca06d0d65c844c3562db57aa2c3b7fc",
+        "acceptance_input_digest": "1340fdcbc890cec9f5c1f1c5ea6c4d02364493289fac3d9fce82f63d5b46d6fb",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "1340fdcbc890cec9f5c1f1c5ea6c4d02364493289fac3d9fce82f63d5b46d6fb",
+      "current_acceptance_input_digest": "9f3ddd62c4d7dc74e28e33ecc3aa323f356a1a4669489ceb77170ec0645e50ca"
     }
   ]
 }

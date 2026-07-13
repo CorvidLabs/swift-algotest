@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0004-cover-all-installed-swift-algotest-agent-integrations-in-the-verified-migration",
+  "slug": "cover-all-installed-swift-algotest-agent-integrations-in-the-verified-migration",
+  "title": "Cover all installed Swift AlgoTest agent integrations in the verified migration",
+  "description": "Cover all installed Swift AlgoTest agent integrations in the verified migration",
+  "kind": "bug_fix",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "c01dc46e440cff438a9f956d0fee7e4578f43cc3",
+  "created_at": 1783974557,
+  "updated_at": 1783974629,
+  "affected_specs": [],
+  "affected_paths": [
+    ".claude",
+    ".codex",
+    ".cursor",
+    ".gemini",
+    ".specsync/sdd.json"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "This change records lifecycle coverage for the already-installed agent integration files after they became meaningful paths; it does not change AlgoTest source, tests, dependencies, canonical requirements, or public APIs.",
+  "acceptance_criteria": [
+    "Strict hosted-equivalent SpecSync accepts every meaningful agent integration path as covered; Claude",
+    "Codex",
+    "Cursor",
+    "and Gemini report installed; Swift builds and all 83 tests pass; no source",
+    "test",
+    "or dependency changes remain"
+  ],
+  "selected_artifacts": [
+    "context",
+    "testing",
+    "tasks",
+    "design"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}
