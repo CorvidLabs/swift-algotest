@@ -1,0 +1,12 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971645,
+      "digest": "e84b18e6d40100d5ac4c417a8608064d14084d227b20a55c392b63a075e9de55",
+      "note": "Reviewed semantic successor: exact source coverage, valid stable IDs, native evidence mappings, and protected policy paths; no runtime behavior changes."
+    }
+  ],
+  "reopenings": []
+}

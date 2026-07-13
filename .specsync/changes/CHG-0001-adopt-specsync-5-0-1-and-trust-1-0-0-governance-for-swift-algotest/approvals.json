@@ -15,18 +15,11 @@
       "note": "Native Fledge lane passed: Swift build and 83 tests; governance-only semantics confirmed."
     },
     {
-      "gate": "definition",
+      "gate": "acceptance",
       "actor": "user:0xLeif",
-      "timestamp": 1783971350,
-      "digest": "3922db0fca2df6583b54cd74c849100e5b0df6b391df3a2685aa5c26e5618587",
-      "note": "Reviewed migration corrections: canonical AlgoTest sources, case-correct Swift tests, protected governance paths, valid stable requirement IDs, and explicit affected-spec traceability; no runtime behavior changes."
-    },
-    {
-      "gate": "definition",
-      "actor": "user:0xLeif",
-      "timestamp": 1783971386,
-      "digest": "91d671804d769cfc99c489f339bde6f2fbc09a9c36fb7700ba476b27ef35c812",
-      "note": "Reviewed migration corrections and explicit native evidence mappings for every stable AlgoTest requirement; no runtime behavior changes."
+      "timestamp": 1783971640,
+      "digest": "b320bb000f61ee1ccc8461e7cdc3e4e1ca88808bb88bd1288be1b1c469a2954c",
+      "note": "Fresh native verification passed for the immutable governance-only definition: Swift build and all 83 tests. Canonical review corrections are governed separately by CHG-0002."
     }
   ],
   "reopenings": [
