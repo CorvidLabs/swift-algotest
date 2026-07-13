@@ -6,7 +6,12 @@
     "src/",
     "tests/",
     "Tests/",
+    "specs/",
     "site/",
+    ".claude/",
+    ".codex/",
+    ".cursor/",
+    ".gemini/",
     ".github/",
     "Cargo.toml",
     "Cargo.lock",
@@ -32,12 +37,10 @@
     ".trust.toml",
     ".augur.toml",
     ".attest.json",
-    "AGENTS.md"
+    "AGENTS.md",
+    "README.md"
   ],
-  "ignored_paths": [
-    ".specsync/",
-    "specs/"
-  ],
+  "ignored_paths": [],
   "verification_commands": [
     "fledge lanes run verify"
   ],

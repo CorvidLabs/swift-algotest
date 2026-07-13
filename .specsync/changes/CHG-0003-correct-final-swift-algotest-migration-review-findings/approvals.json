@@ -1,0 +1,19 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974268,
+      "digest": "0f6dbb99100747985263d92e7f35ddbf2911b739af7e2c59bf1d863f780c6e2f",
+      "note": "Reviewed the final correction set: dependency lock restored exactly from main, complete meaningful-path enforcement, corrected agent argument parsing, and confirmed CHG-0002 base ancestry. No source, test, API, or canonical requirement changes."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974307,
+      "digest": "095058584aebfe680208b2adf2de42e096c6534b0c04e56430d44d3b8f1afd66",
+      "note": "Final review corrections verified: Package.resolved matches main, CHG-0002 base ancestry is valid, configuration parses, strict SpecSync remains complete, Swift builds, and all 83 tests pass. No Sources or Tests files changed."
+    }
+  ],
+  "reopenings": []
+}

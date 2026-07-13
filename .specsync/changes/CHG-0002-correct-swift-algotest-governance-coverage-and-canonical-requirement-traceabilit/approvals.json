@@ -20,6 +20,13 @@
       "timestamp": 1783971786,
       "digest": "406a7b9c4f2346a946b70a0eb59752927ab04d922d46f12911c64ef6a4484e58",
       "note": "Deduplicated canonical requirements verified: strict 100% SpecSync coverage, all 83 Swift tests, and complete evidence for the four stable requirements."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974337,
+      "digest": "7346a38cc3c662f0b075981e5065de19a040df052a19b6a4b5dee64923dc3981",
+      "note": "Refreshed full-contract evidence after final review corrections: dependency lock matches main, strict coverage remains 19/19 files, 1992/1992 LOC, and 174/174 exports; Swift builds and all 83 tests pass with four stable requirements evidenced."
     }
   ],
   "reopenings": [
@@ -61,6 +68,45 @@
       },
       "stale_acceptance_input_digest": "2faa6a132fd2f708d2cb5a61cae41d0f5e23ed87866d4957c3a0e1dddec22bbb",
       "current_acceptance_input_digest": "c3e05ef11963dc42c943dc2588635d18982742824c76c5c690b9d75bb2cfe2c4"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0002-correct-swift-algotest-governance-coverage-and-canonical-requirement-traceabilit",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0003 restored the dependency lock and finalized meaningful-path plus agent configuration; refresh complete canonical evidence against the final migration inputs.",
+      "timestamp": 1783974313,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783971786,
+        "digest": "406a7b9c4f2346a946b70a0eb59752927ab04d922d46f12911c64ef6a4484e58",
+        "note": "Deduplicated canonical requirements verified: strict 100% SpecSync coverage, all 83 Swift tests, and complete evidence for the four stable requirements."
+      },
+      "prior_verification": {
+        "timestamp": 1783971776,
+        "commit": "3d87cf177e3a49703cbbb96dbf6a6596ce8b269a",
+        "contract_digest": "e84b18e6d40100d5ac4c417a8608064d14084d227b20a55c392b63a075e9de55",
+        "workspace_digest": "c471be99be2451d431fd8d55d78988040071cdd3f16e56d8b4778967a222e49b",
+        "acceptance_input_digest": "c3e05ef11963dc42c943dc2588635d18982742824c76c5c690b9d75bb2cfe2c4",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-algotest-001",
+          "REQ-algotest-002",
+          "REQ-algotest-003",
+          "REQ-algotest-004"
+        ]
+      },
+      "stale_acceptance_input_digest": "c3e05ef11963dc42c943dc2588635d18982742824c76c5c690b9d75bb2cfe2c4",
+      "current_acceptance_input_digest": "04ad70aa72674d7b52b80551ae7a0c24b7117624636b0b3ff87f8ed6ecc9a906"
     }
   ]
 }
