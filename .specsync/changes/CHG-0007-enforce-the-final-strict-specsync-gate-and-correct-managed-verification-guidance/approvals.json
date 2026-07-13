@@ -13,7 +13,49 @@
       "timestamp": 1783976076,
       "digest": "f8e5ac629011c1c0b25b8949bdb2ebaf3c432ba56e31cfd91c985336e0ac779d",
       "note": "Accepted after immutable strict SpecSync workflow enforcement, corrected managed guidance, native build, and all 83 tests were verified."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783976375,
+      "digest": "9ca4d74bde46fca59db0b57215816a5ac1e632a2abe38d0e7964bebf27f2683e",
+      "note": "Accepted after the strict SpecSync workflow, pinned Fledge prerequisite, and all 83 native tests passed together."
     }
   ],
-  "reopenings": []
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0007-enforce-the-final-strict-specsync-gate-and-correct-managed-verification-guidance",
+      "actor": "user:0xLeif",
+      "reason": "The pinned Fledge runner dependency completed the strict SpecSync workflow implementation, so this predecessor evidence must be refreshed against the final hosted configuration.",
+      "timestamp": 1783976354,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783976076,
+        "digest": "f8e5ac629011c1c0b25b8949bdb2ebaf3c432ba56e31cfd91c985336e0ac779d",
+        "note": "Accepted after immutable strict SpecSync workflow enforcement, corrected managed guidance, native build, and all 83 tests were verified."
+      },
+      "prior_verification": {
+        "timestamp": 1783976071,
+        "commit": "eface86b98a07d460e406d0a6cd1d253465f5d77",
+        "contract_digest": "6410c02b62be7856b86f788940cb1fd75630a11c49191598bcd80f232a17bf5c",
+        "workspace_digest": "fda0d3e97f6d1cfa88f29e5cc0783dcfc3e78d9b8825e6d7963b16709812f65a",
+        "acceptance_input_digest": "7a14e4bb3fb5b94fccb2b5ea8824e96cfad7d13eac08674099cde7b1b6b2fed1",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "7a14e4bb3fb5b94fccb2b5ea8824e96cfad7d13eac08674099cde7b1b6b2fed1",
+      "current_acceptance_input_digest": "2d3d2d2add7eadcafdf005d8c1b7d27c9236f71731877612cb045d4970c61d61"
+    }
+  ]
 }

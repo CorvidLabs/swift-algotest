@@ -23,6 +23,19 @@ jobs:
           git fetch origin main:refs/remotes/origin/main
       - name: Install Trust runtime
         run: apt-get update && apt-get install -y ca-certificates curl python3
+      - name: Install Fledge runtime
+        env:
+          FLEDGE_SHA256: 9a2c5a0db698811052ad741dd8da5a3e8af5e46797f11b6cc59dffbd49917170
+        run: |
+          curl -fsSL \
+            https://github.com/CorvidLabs/fledge/releases/download/v1.7.0/fledge-linux-x86_64 \
+            -o /usr/local/bin/fledge
+          actual="$(shasum -a 256 /usr/local/bin/fledge | awk '{print $1}')"
+          if [ "$actual" != "$FLEDGE_SHA256" ]; then
+            echo "::error::Fledge 1.7.0 checksum mismatch"
+            exit 1
+          fi
+          chmod +x /usr/local/bin/fledge
       - name: SpecSync lifecycle gate
         uses: CorvidLabs/spec-sync@59bbfa766c6cce01ab815ab47db195b0629cc014 # v5.0.1
         with:

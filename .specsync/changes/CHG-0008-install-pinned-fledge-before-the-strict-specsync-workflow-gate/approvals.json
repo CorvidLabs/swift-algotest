@@ -1,0 +1,19 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783976318,
+      "digest": "0bb44d66e7327880d424c4504df0db05398bc91a4d90293545765eb94eaf4be1",
+      "note": "Approved as the minimal hosted-runner dependency correction, using the same immutable Fledge 1.7.0 release checksum as Trust."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783976345,
+      "digest": "ff99d2ba1e6665b9566d75dae9fed4a2cfdbfd26d3e21fb8fb769574c3f55ed9",
+      "note": "Accepted after the pinned-runner dependency correction and all 83 native tests passed with strict lifecycle inputs unchanged."
+    }
+  ],
+  "reopenings": []
+}
