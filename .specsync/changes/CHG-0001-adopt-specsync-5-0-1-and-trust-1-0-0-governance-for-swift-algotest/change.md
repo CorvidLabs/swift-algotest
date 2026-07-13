@@ -1,6 +1,6 @@
 ---
 id: CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest
-state: accepted
+state: implementing
 type: migration
 base_commit: d16d34ad24f93c2ac4985fe8b354664f826d4c7e
 ---
@@ -13,7 +13,7 @@ Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for Swift AlgoTest
 
 ## Affected Canonical Specs
 
-- None
+- `algotest`
 
 ## Acceptance Criteria
 
@@ -21,4 +21,4 @@ Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for Swift AlgoTest
 
 ## No-spec Rationale
 
-This governance-only migration assigns stable requirement IDs and configures SpecSync and Trust without changing Swift AlgoTest runtime behavior or existing requirement semantics.
+Not applicable

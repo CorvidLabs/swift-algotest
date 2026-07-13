@@ -5,11 +5,14 @@
   "title": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for Swift AlgoTest",
   "description": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for Swift AlgoTest",
   "kind": "migration",
-  "state": "accepted",
+  "state": "implementing",
+  "canonical_applied": true,
   "base_commit": "d16d34ad24f93c2ac4985fe8b354664f826d4c7e",
   "created_at": 1783885270,
-  "updated_at": 1783950168,
-  "affected_specs": [],
+  "updated_at": 1783971386,
+  "affected_specs": [
+    "algotest"
+  ],
   "affected_paths": [
     "Sources/",
     "Tests/",
@@ -24,8 +27,8 @@
     ".attest.json",
     "AGENTS.md"
   ],
-  "no_spec_change": true,
-  "no_spec_change_rationale": "This governance-only migration assigns stable requirement IDs and configures SpecSync and Trust without changing Swift AlgoTest runtime behavior or existing requirement semantics.",
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
   "acceptance_criteria": [
     "Strict SpecSync passes at advisory threshold 0; all four agent integrations are installed; Trust doctor passes; Swift build and all 83 deterministic tests pass; macOS, Linux, dependencies, DocC, and live sandbox boundaries remain intact"
   ],

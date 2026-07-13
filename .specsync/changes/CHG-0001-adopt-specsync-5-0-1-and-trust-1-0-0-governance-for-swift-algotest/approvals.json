@@ -13,6 +13,56 @@
       "timestamp": 1783950168,
       "digest": "098e2814b755e814e7a77c362c33438b61db38f66375c85ee6b0f5673990f9d2",
       "note": "Native Fledge lane passed: Swift build and 83 tests; governance-only semantics confirmed."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971350,
+      "digest": "3922db0fca2df6583b54cd74c849100e5b0df6b391df3a2685aa5c26e5618587",
+      "note": "Reviewed migration corrections: canonical AlgoTest sources, case-correct Swift tests, protected governance paths, valid stable requirement IDs, and explicit affected-spec traceability; no runtime behavior changes."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971386,
+      "digest": "91d671804d769cfc99c489f339bde6f2fbc09a9c36fb7700ba476b27ef35c812",
+      "note": "Reviewed migration corrections and explicit native evidence mappings for every stable AlgoTest requirement; no runtime behavior changes."
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "Final migration review corrected source coverage, meaningful policy paths, and affected-spec traceability; refresh native evidence and closing approval.",
+      "timestamp": 1783971230,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783950168,
+        "digest": "098e2814b755e814e7a77c362c33438b61db38f66375c85ee6b0f5673990f9d2",
+        "note": "Native Fledge lane passed: Swift build and 83 tests; governance-only semantics confirmed."
+      },
+      "prior_verification": {
+        "timestamp": 1783950024,
+        "commit": "5a41bdb32c7fdc131134406b59e70856ab7dcd2b",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "a3d2d0889f827ca1672eea87a84075ddd1011d6ed8bc316c2b1bf87582ad384d",
+        "acceptance_input_digest": "88b8e471f1a6d530b8da4551e560ea59ff238c5f9a1fa5fbc3305ebc63ff9261",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "88b8e471f1a6d530b8da4551e560ea59ff238c5f9a1fa5fbc3305ebc63ff9261",
+      "current_acceptance_input_digest": "0d0182d9a59573162838b31cfe599d3b9280e92f2e03d585afb914a7e934ed0a"
     }
   ]
 }

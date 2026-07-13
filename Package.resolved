@@ -1,6 +1,24 @@
 {
-  "originHash" : "04092c7e0e13b477c7bedf06621a247148beecfb8d6279ace4a0f66bc7f57460",
+  "originHash" : "a68cc91f954fe22efa00058f99c62fd56f7d95b43734517a2ebf2e3bb2fab523",
   "pins" : [
+    {
+      "identity" : "swift-algokit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CorvidLabs/swift-algokit.git",
+      "state" : {
+        "revision" : "07abcab75a912b435cec2158a033c975039f7676",
+        "version" : "0.0.2"
+      }
+    },
+    {
+      "identity" : "swift-algorand",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CorvidLabs/swift-algorand.git",
+      "state" : {
+        "revision" : "ca29c9ae8d355d556d2bd54ebee098ca6b8397f7",
+        "version" : "0.3.2"
+      }
+    },
     {
       "identity" : "swift-asn1",
       "kind" : "remoteSourceControl",
