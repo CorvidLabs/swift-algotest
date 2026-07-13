@@ -15,5 +15,45 @@
       "note": "Native verification passed: Swift build and all 83 tests; strict SpecSync reports 19/19 files, 1992/1992 LOC, 174/174 exports, zero warnings, and complete evidence for REQ-algotest-001 through REQ-algotest-004."
     }
   ],
-  "reopenings": []
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0002-correct-swift-algotest-governance-coverage-and-canonical-requirement-traceabilit",
+      "actor": "user:0xLeif",
+      "reason": "Post-acceptance audit removed duplicate presentation of the same four stable requirements while preserving their accepted semantics and evidence.",
+      "timestamp": 1783971757,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783971680,
+        "digest": "c1759bc481f0934dd34cf39629dc5984fa871e71133cd4871e45a949e42d1fe5",
+        "note": "Native verification passed: Swift build and all 83 tests; strict SpecSync reports 19/19 files, 1992/1992 LOC, 174/174 exports, zero warnings, and complete evidence for REQ-algotest-001 through REQ-algotest-004."
+      },
+      "prior_verification": {
+        "timestamp": 1783971674,
+        "commit": "eeaf29bf087adab08f81b659fb674c5613a4a0f2",
+        "contract_digest": "e84b18e6d40100d5ac4c417a8608064d14084d227b20a55c392b63a075e9de55",
+        "workspace_digest": "b2876367ec7024d4a77b3195305d13b5b34020bd0c6156401dfe6e14c7a1e1e3",
+        "acceptance_input_digest": "2faa6a132fd2f708d2cb5a61cae41d0f5e23ed87866d4957c3a0e1dddec22bbb",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": [
+          "REQ-algotest-001",
+          "REQ-algotest-002",
+          "REQ-algotest-003",
+          "REQ-algotest-004"
+        ]
+      },
+      "stale_acceptance_input_digest": "2faa6a132fd2f708d2cb5a61cae41d0f5e23ed87866d4957c3a0e1dddec22bbb",
+      "current_acceptance_input_digest": "c3e05ef11963dc42c943dc2588635d18982742824c76c5c690b9d75bb2cfe2c4"
+    }
+  ]
 }

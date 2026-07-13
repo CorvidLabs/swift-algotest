@@ -1,6 +1,6 @@
 ---
 id: CHG-0002-correct-swift-algotest-governance-coverage-and-canonical-requirement-traceabilit
-state: accepted
+state: verifying
 type: migration
 base_commit: 316a6200b332523bf1f289440b18db4fe884f105
 ---

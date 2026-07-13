@@ -5,11 +5,11 @@
   "title": "Correct Swift AlgoTest governance coverage and canonical requirement traceability after final migration review",
   "description": "Correct Swift AlgoTest governance coverage and canonical requirement traceability after final migration review",
   "kind": "migration",
-  "state": "accepted",
+  "state": "verifying",
   "canonical_applied": true,
   "base_commit": "316a6200b332523bf1f289440b18db4fe884f105",
   "created_at": 1783971576,
-  "updated_at": 1783971680,
+  "updated_at": 1783971757,
   "affected_specs": [
     "algotest"
   ],
