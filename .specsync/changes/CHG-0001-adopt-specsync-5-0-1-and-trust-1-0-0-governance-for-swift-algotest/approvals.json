@@ -20,6 +20,13 @@
       "timestamp": 1783971640,
       "digest": "b320bb000f61ee1ccc8461e7cdc3e4e1ca88808bb88bd1288be1b1c469a2954c",
       "note": "Fresh native verification passed for the immutable governance-only definition: Swift build and all 83 tests. Canonical review corrections are governed separately by CHG-0002."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971714,
+      "digest": "fb735d2dbfdbfd524e7c16e8eefd17092e13f300991c4a1f3c230ff85c1b4522",
+      "note": "Final refresh passed after accepted CHG-0002: Swift build and all 83 tests on the final canonical governance state; no runtime changes."
     }
   ],
   "reopenings": [
@@ -56,6 +63,40 @@
       },
       "stale_acceptance_input_digest": "88b8e471f1a6d530b8da4551e560ea59ff238c5f9a1fa5fbc3305ebc63ff9261",
       "current_acceptance_input_digest": "0d0182d9a59573162838b31cfe599d3b9280e92f2e03d585afb914a7e934ed0a"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0002 applied the reviewed canonical governance corrections after the prior refresh; renew original migration evidence against the final accepted delivery.",
+      "timestamp": 1783971692,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783971640,
+        "digest": "b320bb000f61ee1ccc8461e7cdc3e4e1ca88808bb88bd1288be1b1c469a2954c",
+        "note": "Fresh native verification passed for the immutable governance-only definition: Swift build and all 83 tests. Canonical review corrections are governed separately by CHG-0002."
+      },
+      "prior_verification": {
+        "timestamp": 1783971634,
+        "commit": "316a6200b332523bf1f289440b18db4fe884f105",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "b2876367ec7024d4a77b3195305d13b5b34020bd0c6156401dfe6e14c7a1e1e3",
+        "acceptance_input_digest": "ef8de82055fd39d9ab4c2e3d9f5631ead0e7e9b4562b0d4d5a62da44f0d06a47",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "ef8de82055fd39d9ab4c2e3d9f5631ead0e7e9b4562b0d4d5a62da44f0d06a47",
+      "current_acceptance_input_digest": "2329733b75fbb4be3b0d6222e252b871fa9c37e5595db04e8439c9d78c0406a0"
     }
   ]
 }
