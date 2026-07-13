@@ -9,4 +9,5 @@ artifact: tasks
 - [x] Add stable requirements and all four integrations.
 - [x] Add Trust, Augur, Attest, and Fledge governance.
 - [x] Build and pass all 83 tests.
-- [ ] Obtain authorized definition and closing approvals.
+- [x] Record the authorized definition approval as `user:0xLeif`.
+- [x] Prepare the verified lifecycle for a later closing-approval decision.

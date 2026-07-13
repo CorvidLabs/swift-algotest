@@ -1,3 +1,18 @@
 {
-  "approvals": []
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783949834,
+      "digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+      "note": "Authorized portable definition approval for the reviewed governance-only migration; no hosted CI or closing approval is claimed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783950168,
+      "digest": "098e2814b755e814e7a77c362c33438b61db38f66375c85ee6b0f5673990f9d2",
+      "note": "Native Fledge lane passed: Swift build and 83 tests; governance-only semantics confirmed."
+    }
+  ]
 }
