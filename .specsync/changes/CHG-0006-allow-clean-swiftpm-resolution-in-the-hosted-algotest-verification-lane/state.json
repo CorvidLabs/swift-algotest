@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0006-allow-clean-swiftpm-resolution-in-the-hosted-algotest-verification-lane",
+  "slug": "allow-clean-swiftpm-resolution-in-the-hosted-algotest-verification-lane",
+  "title": "Allow clean SwiftPM resolution in the hosted AlgoTest verification lane",
+  "description": "Allow clean SwiftPM resolution in the hosted AlgoTest verification lane",
+  "kind": "bug_fix",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "0546627ddbb42c2cc092362b6aa288d7fafd74be",
+  "created_at": 1783975568,
+  "updated_at": 1783975615,
+  "affected_specs": [],
+  "affected_paths": [
+    "fledge.toml"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "The base branch lockfile is incomplete for a clean checkout, so hosted verification must allow SwiftPM to resolve the existing manifest constraints while the migration continues to commit no dependency-lock change and alters no source, tests, APIs, or canonical requirements.",
+  "acceptance_criteria": [
+    "The Fledge verification lane permits SwiftPM to resolve the existing manifest constraints in a clean checkout and removes its ephemeral lockfile rewrite on exit; Swift builds and all 83 tests pass; Package.resolved remains byte-identical to main; no source or test files change"
+  ],
+  "selected_artifacts": [
+    "context",
+    "testing",
+    "tasks"
+  ],
+  "dependencies": [
+    "CHG-0005-freeze-swiftpm-dependency-resolution-in-the-algotest-verification-lane"
+  ],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}

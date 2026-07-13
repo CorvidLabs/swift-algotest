@@ -1,0 +1,348 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783949834,
+      "digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+      "note": "Authorized portable definition approval for the reviewed governance-only migration; no hosted CI or closing approval is claimed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783950168,
+      "digest": "098e2814b755e814e7a77c362c33438b61db38f66375c85ee6b0f5673990f9d2",
+      "note": "Native Fledge lane passed: Swift build and 83 tests; governance-only semantics confirmed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971640,
+      "digest": "b320bb000f61ee1ccc8461e7cdc3e4e1ca88808bb88bd1288be1b1c469a2954c",
+      "note": "Fresh native verification passed for the immutable governance-only definition: Swift build and all 83 tests. Canonical review corrections are governed separately by CHG-0002."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971714,
+      "digest": "fb735d2dbfdbfd524e7c16e8eefd17092e13f300991c4a1f3c230ff85c1b4522",
+      "note": "Final refresh passed after accepted CHG-0002: Swift build and all 83 tests on the final canonical governance state; no runtime changes."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971824,
+      "digest": "300ca331727fecc969f63faf69f83314e95d360664f118f4e52f567ac8b5c607",
+      "note": "Final evidence refresh passed against the stable accepted successor: Swift build and all 83 tests, with no runtime changes."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974363,
+      "digest": "4f19de9a998e00a8cea79543ed8f5a98a15f624ce1ee30a0c3b4af6b2a2169e6",
+      "note": "Final adoption refresh after all review corrections: Package.resolved matches main, strict SpecSync remains 100 percent, Swift builds, and all 83 tests pass. The accepted full-contract successor remains authoritative over historical threshold-zero adoption text."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974919,
+      "digest": "8a2ed5803406307248f4dd67aca73f10468f6a4126c12e1ef1bbafcf233b79e1",
+      "note": "Accepted after final native verification passed: frozen SwiftPM build and all 83 tests succeeded against the final governed tree."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783975678,
+      "digest": "020a9a9aa28f5817a5a2d8259511fbc21c8e6c96940c70c9e0e8c47c3f29649a",
+      "note": "Accepted after final hosted-compatible Fledge configuration built successfully, all 83 tests passed, and lockfile cleanup preserved the migration-only diff."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783976104,
+      "digest": "3eec0915f6ac81522dd79f214ff6ec82fe6d688b43267b7a7df36b48e2733716",
+      "note": "Accepted after final strict SpecSync workflow configuration and all 83 native tests passed against the complete migration tree."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783976399,
+      "digest": "fa5048bbc78c343bfd0258d89775c8fcf4371a2e9fbf54770319b584425cb1a4",
+      "note": "Accepted after the complete hosted dependency setup, strict SpecSync gate, and all 83 native tests passed on the final migration tree."
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "Final migration review corrected source coverage, meaningful policy paths, and affected-spec traceability; refresh native evidence and closing approval.",
+      "timestamp": 1783971230,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783950168,
+        "digest": "098e2814b755e814e7a77c362c33438b61db38f66375c85ee6b0f5673990f9d2",
+        "note": "Native Fledge lane passed: Swift build and 83 tests; governance-only semantics confirmed."
+      },
+      "prior_verification": {
+        "timestamp": 1783950024,
+        "commit": "5a41bdb32c7fdc131134406b59e70856ab7dcd2b",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "a3d2d0889f827ca1672eea87a84075ddd1011d6ed8bc316c2b1bf87582ad384d",
+        "acceptance_input_digest": "88b8e471f1a6d530b8da4551e560ea59ff238c5f9a1fa5fbc3305ebc63ff9261",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "88b8e471f1a6d530b8da4551e560ea59ff238c5f9a1fa5fbc3305ebc63ff9261",
+      "current_acceptance_input_digest": "0d0182d9a59573162838b31cfe599d3b9280e92f2e03d585afb914a7e934ed0a"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0002 applied the reviewed canonical governance corrections after the prior refresh; renew original migration evidence against the final accepted delivery.",
+      "timestamp": 1783971692,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783971640,
+        "digest": "b320bb000f61ee1ccc8461e7cdc3e4e1ca88808bb88bd1288be1b1c469a2954c",
+        "note": "Fresh native verification passed for the immutable governance-only definition: Swift build and all 83 tests. Canonical review corrections are governed separately by CHG-0002."
+      },
+      "prior_verification": {
+        "timestamp": 1783971634,
+        "commit": "316a6200b332523bf1f289440b18db4fe884f105",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "b2876367ec7024d4a77b3195305d13b5b34020bd0c6156401dfe6e14c7a1e1e3",
+        "acceptance_input_digest": "ef8de82055fd39d9ab4c2e3d9f5631ead0e7e9b4562b0d4d5a62da44f0d06a47",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "ef8de82055fd39d9ab4c2e3d9f5631ead0e7e9b4562b0d4d5a62da44f0d06a47",
+      "current_acceptance_input_digest": "2329733b75fbb4be3b0d6222e252b871fa9c37e5595db04e8439c9d78c0406a0"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "The accepted semantic successor completed its deduplicated canonical refresh; renew the original migration evidence once against the final delivery state.",
+      "timestamp": 1783971795,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783971714,
+        "digest": "fb735d2dbfdbfd524e7c16e8eefd17092e13f300991c4a1f3c230ff85c1b4522",
+        "note": "Final refresh passed after accepted CHG-0002: Swift build and all 83 tests on the final canonical governance state; no runtime changes."
+      },
+      "prior_verification": {
+        "timestamp": 1783971707,
+        "commit": "cb598078bd585a84da34fbe06058b37790f05579",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "08391fd78bf85803ca9f4d2944d072d32dbe1e5b555ea01a4da74800f45896b8",
+        "acceptance_input_digest": "2329733b75fbb4be3b0d6222e252b871fa9c37e5595db04e8439c9d78c0406a0",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "2329733b75fbb4be3b0d6222e252b871fa9c37e5595db04e8439c9d78c0406a0",
+      "current_acceptance_input_digest": "a0960b61681a9411e6f8ea56394b3873b3c7b49c51cf8cd3e1bea5b0abe8c834"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0003 finalized dependency-preserving review corrections and CHG-0002 evidence is refreshed; update the original adoption evidence last against the final migration.",
+      "timestamp": 1783974337,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783971824,
+        "digest": "300ca331727fecc969f63faf69f83314e95d360664f118f4e52f567ac8b5c607",
+        "note": "Final evidence refresh passed against the stable accepted successor: Swift build and all 83 tests, with no runtime changes."
+      },
+      "prior_verification": {
+        "timestamp": 1783971817,
+        "commit": "6cb024eac8076594a5ebcdc7a423d979d985a077",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "c471be99be2451d431fd8d55d78988040071cdd3f16e56d8b4778967a222e49b",
+        "acceptance_input_digest": "a0960b61681a9411e6f8ea56394b3873b3c7b49c51cf8cd3e1bea5b0abe8c834",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "a0960b61681a9411e6f8ea56394b3873b3c7b49c51cf8cd3e1bea5b0abe8c834",
+      "current_acceptance_input_digest": "1340fdcbc890cec9f5c1f1c5ea6c4d02364493289fac3d9fce82f63d5b46d6fb"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "Later accepted migration corrections changed governed agent paths and verification configuration, so the original delivery evidence must be reverified against the final tree.",
+      "timestamp": 1783974893,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783974363,
+        "digest": "4f19de9a998e00a8cea79543ed8f5a98a15f624ce1ee30a0c3b4af6b2a2169e6",
+        "note": "Final adoption refresh after all review corrections: Package.resolved matches main, strict SpecSync remains 100 percent, Swift builds, and all 83 tests pass. The accepted full-contract successor remains authoritative over historical threshold-zero adoption text."
+      },
+      "prior_verification": {
+        "timestamp": 1783974356,
+        "commit": "9fe4b1527a92985c528f4c338d0426c37d73c76e",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "fa534acb2245b86e2541d9b23cc498ee2ca06d0d65c844c3562db57aa2c3b7fc",
+        "acceptance_input_digest": "1340fdcbc890cec9f5c1f1c5ea6c4d02364493289fac3d9fce82f63d5b46d6fb",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "1340fdcbc890cec9f5c1f1c5ea6c4d02364493289fac3d9fce82f63d5b46d6fb",
+      "current_acceptance_input_digest": "9f3ddd62c4d7dc74e28e33ecc3aa323f356a1a4669489ceb77170ec0645e50ca"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "The hosted-compatible successor finalized the Fledge verification behavior, so the original migration delivery must be refreshed against the final ordered tree.",
+      "timestamp": 1783975654,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783974919,
+        "digest": "8a2ed5803406307248f4dd67aca73f10468f6a4126c12e1ef1bbafcf233b79e1",
+        "note": "Accepted after final native verification passed: frozen SwiftPM build and all 83 tests succeeded against the final governed tree."
+      },
+      "prior_verification": {
+        "timestamp": 1783974911,
+        "commit": "c01dc46e440cff438a9f956d0fee7e4578f43cc3",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "163cafdfbba97e0911dd7b1c4f7289937c865997d004c00905a1ae5cff7a70bb",
+        "acceptance_input_digest": "9f3ddd62c4d7dc74e28e33ecc3aa323f356a1a4669489ceb77170ec0645e50ca",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "9f3ddd62c4d7dc74e28e33ecc3aa323f356a1a4669489ceb77170ec0645e50ca",
+      "current_acceptance_input_digest": "d864c279dd23fb094df5ba9079a8a56fb0d9cc984d3b1f1b35d904db2adcf6c8"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "The final strict SpecSync workflow and managed-guidance correction changed original migration delivery inputs, requiring one final native evidence refresh.",
+      "timestamp": 1783976082,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783975678,
+        "digest": "020a9a9aa28f5817a5a2d8259511fbc21c8e6c96940c70c9e0e8c47c3f29649a",
+        "note": "Accepted after final hosted-compatible Fledge configuration built successfully, all 83 tests passed, and lockfile cleanup preserved the migration-only diff."
+      },
+      "prior_verification": {
+        "timestamp": 1783975671,
+        "commit": "0546627ddbb42c2cc092362b6aa288d7fafd74be",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "544ff0cfdd9b7b971fe56aea1db731fbbf14a4a5ee4549db47d47d24c339f54d",
+        "acceptance_input_digest": "d864c279dd23fb094df5ba9079a8a56fb0d9cc984d3b1f1b35d904db2adcf6c8",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "d864c279dd23fb094df5ba9079a8a56fb0d9cc984d3b1f1b35d904db2adcf6c8",
+      "current_acceptance_input_digest": "4139cfa537503de061e3df748cfec512edbe835fd997a8fef9050c113f9cdb51"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "The final pinned Fledge prerequisite changed the original migration workflow delivery inputs, requiring the final evidence refresh.",
+      "timestamp": 1783976375,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783976104,
+        "digest": "3eec0915f6ac81522dd79f214ff6ec82fe6d688b43267b7a7df36b48e2733716",
+        "note": "Accepted after final strict SpecSync workflow configuration and all 83 native tests passed against the complete migration tree."
+      },
+      "prior_verification": {
+        "timestamp": 1783976096,
+        "commit": "eface86b98a07d460e406d0a6cd1d253465f5d77",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "fda0d3e97f6d1cfa88f29e5cc0783dcfc3e78d9b8825e6d7963b16709812f65a",
+        "acceptance_input_digest": "4139cfa537503de061e3df748cfec512edbe835fd997a8fef9050c113f9cdb51",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "4139cfa537503de061e3df748cfec512edbe835fd997a8fef9050c113f9cdb51",
+      "current_acceptance_input_digest": "60ed3611dd88c2ad3e151a4eef9a625ec30648e4797618c845028b14ea50d3f5"
+    }
+  ]
+}

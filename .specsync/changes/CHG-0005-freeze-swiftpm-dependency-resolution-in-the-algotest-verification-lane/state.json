@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0005-freeze-swiftpm-dependency-resolution-in-the-algotest-verification-lane",
+  "slug": "freeze-swiftpm-dependency-resolution-in-the-algotest-verification-lane",
+  "title": "Freeze SwiftPM dependency resolution in the AlgoTest verification lane",
+  "description": "Freeze SwiftPM dependency resolution in the AlgoTest verification lane",
+  "kind": "bug_fix",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "c01dc46e440cff438a9f956d0fee7e4578f43cc3",
+  "created_at": 1783974752,
+  "updated_at": 1783975654,
+  "affected_specs": [],
+  "affected_paths": [
+    "fledge.toml",
+    "Package.resolved"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "This correction prevents governance verification from rewriting the dependency lock; it preserves the dependencies already committed on main and does not change source, tests, APIs, or canonical requirements.",
+  "acceptance_criteria": [
+    "The Fledge build and test tasks use frozen SwiftPM resolution; Package.resolved remains byte-identical to main before and after verification; Swift builds and all 83 tests pass; no source or test files change"
+  ],
+  "selected_artifacts": [
+    "context",
+    "testing",
+    "tasks"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}

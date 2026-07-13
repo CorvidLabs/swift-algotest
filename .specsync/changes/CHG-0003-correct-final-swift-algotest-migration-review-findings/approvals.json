@@ -1,0 +1,61 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974268,
+      "digest": "0f6dbb99100747985263d92e7f35ddbf2911b739af7e2c59bf1d863f780c6e2f",
+      "note": "Reviewed the final correction set: dependency lock restored exactly from main, complete meaningful-path enforcement, corrected agent argument parsing, and confirmed CHG-0002 base ancestry. No source, test, API, or canonical requirement changes."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974307,
+      "digest": "095058584aebfe680208b2adf2de42e096c6534b0c04e56430d44d3b8f1afd66",
+      "note": "Final review corrections verified: Package.resolved matches main, CHG-0002 base ancestry is valid, configuration parses, strict SpecSync remains complete, Swift builds, and all 83 tests pass. No Sources or Tests files changed."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974893,
+      "digest": "bd42d42e3f19ff98e84f0df6593b4469f305c09867e140a05256249aba50e6f5",
+      "note": "Accepted after native Swift verification passed with frozen dependency resolution and migration review corrections were audited."
+    }
+  ],
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0003-correct-final-swift-algotest-migration-review-findings",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0005 made verification preserve main's dependency lock; refresh final-review evidence against the frozen-resolution lane and unchanged Package.resolved.",
+      "timestamp": 1783974821,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783974307,
+        "digest": "095058584aebfe680208b2adf2de42e096c6534b0c04e56430d44d3b8f1afd66",
+        "note": "Final review corrections verified: Package.resolved matches main, CHG-0002 base ancestry is valid, configuration parses, strict SpecSync remains complete, Swift builds, and all 83 tests pass. No Sources or Tests files changed."
+      },
+      "prior_verification": {
+        "timestamp": 1783974295,
+        "commit": "9fe4b1527a92985c528f4c338d0426c37d73c76e",
+        "contract_digest": "0f6dbb99100747985263d92e7f35ddbf2911b739af7e2c59bf1d863f780c6e2f",
+        "workspace_digest": "fa534acb2245b86e2541d9b23cc498ee2ca06d0d65c844c3562db57aa2c3b7fc",
+        "acceptance_input_digest": "daa4f0f6c06741c053392ac884c177be8eb3ffcacaa8a98dd1690cef30070aa8",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "daa4f0f6c06741c053392ac884c177be8eb3ffcacaa8a98dd1690cef30070aa8",
+      "current_acceptance_input_digest": "b03995903f87b8d10327d021ddaf4a30f83c9a3ee7036556ec3218b6b00707d2"
+    }
+  ]
+}

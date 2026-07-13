@@ -1,0 +1,19 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974591,
+      "digest": "1d3826895dd578faddbfc0c211eb47a3b20ce403837781ab3087d026c7ff3453",
+      "note": "Reviewed the hosted uncovered-path evidence and explicit all-agent coverage successor. Strict policy remains enabled and no source, tests, dependencies, APIs, or canonical requirements change."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783974629,
+      "digest": "23e361fb552f017898e80dded5e86ae725d7bd079de452e9281ef1e7f935e39e",
+      "note": "Hosted uncovered-path correction verified: all four agent integrations are explicitly covered and installed; strict 100 percent SpecSync, Swift build, and all 83 tests pass; Package.resolved matches main and no product changes remain."
+    }
+  ],
+  "reopenings": []
+}

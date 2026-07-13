@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0003-correct-final-swift-algotest-migration-review-findings",
+  "slug": "correct-final-swift-algotest-migration-review-findings",
+  "title": "Correct final Swift AlgoTest migration review findings",
+  "description": "Correct final Swift AlgoTest migration review findings",
+  "kind": "bug_fix",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "9fe4b1527a92985c528f4c338d0426c37d73c76e",
+  "created_at": 1783974171,
+  "updated_at": 1783974893,
+  "affected_specs": [],
+  "affected_paths": [
+    "Package.resolved",
+    ".specsync/sdd.json",
+    ".claude",
+    ".cursor",
+    ".gemini"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "These corrections restore the pre-migration dependency lock and fix governance path coverage plus generated agent command parsing; AlgoTest source, tests, public APIs, and canonical requirements are unchanged.",
+  "acceptance_criteria": [
+    "Package.resolved is byte-identical to main; specs and all four agent integration directories are meaningful and not ignored; Gemini passes rendered change arguments; create-spec commands classify complete input before naming; strict SpecSync",
+    "Swift build",
+    "and all 83 tests pass with no source or test changes"
+  ],
+  "selected_artifacts": [
+    "context",
+    "testing",
+    "tasks",
+    "design"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}

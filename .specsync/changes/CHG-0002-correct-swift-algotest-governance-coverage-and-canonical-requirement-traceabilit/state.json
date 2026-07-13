@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0002-correct-swift-algotest-governance-coverage-and-canonical-requirement-traceabilit",
+  "slug": "correct-swift-algotest-governance-coverage-and-canonical-requirement-traceabilit",
+  "title": "Correct Swift AlgoTest governance coverage and canonical requirement traceability after final migration review",
+  "description": "Correct Swift AlgoTest governance coverage and canonical requirement traceability after final migration review",
+  "kind": "migration",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "316a6200b332523bf1f289440b18db4fe884f105",
+  "created_at": 1783971576,
+  "updated_at": 1783974337,
+  "affected_specs": [
+    "algotest"
+  ],
+  "affected_paths": [
+    "specs/algotest",
+    ".specsync/sdd.json"
+  ],
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
+  "acceptance_criteria": [
+    "Strict SpecSync passes with 100% source and LOC coverage and zero warnings; all four stable requirements map to existing native tests; meaningful paths protect Swift tests and governance policy files; Swift build and all 83 tests pass"
+  ],
+  "selected_artifacts": [
+    "context",
+    "research",
+    "design",
+    "plan",
+    "tasks",
+    "testing",
+    "docs"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "yes",
+    "public_contract": "no"
+  }
+}
