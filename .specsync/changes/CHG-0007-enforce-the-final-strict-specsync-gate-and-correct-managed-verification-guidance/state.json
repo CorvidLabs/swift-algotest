@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0007-enforce-the-final-strict-specsync-gate-and-correct-managed-verification-guidance",
+  "slug": "enforce-the-final-strict-specsync-gate-and-correct-managed-verification-guidance",
+  "title": "Enforce the final strict SpecSync gate and correct managed verification guidance",
+  "description": "Enforce the final strict SpecSync gate and correct managed verification guidance",
+  "kind": "bug_fix",
+  "state": "accepted",
+  "canonical_applied": true,
+  "base_commit": "eface86b98a07d460e406d0a6cd1d253465f5d77",
+  "created_at": 1783975995,
+  "updated_at": 1783976076,
+  "affected_specs": [],
+  "affected_paths": [
+    "AGENTS.md",
+    ".trust.toml",
+    ".github/workflows/trust.yml"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "This correction aligns migration workflow enforcement and generated governance instructions with the approved SpecSync 5.0.1 and Trust 1.0.0 contract; it changes no runtime source, tests, public API, or canonical requirement semantics.",
+  "acceptance_criteria": [
+    "The pull-request workflow runs immutable SpecSync 5.0.1 with strict warnings",
+    "100 percent coverage",
+    "and lifecycle enforcement before immutable Trust 1.0.0; Trust contract coverage is 100 percent; managed guidance names fledge lanes run verify; progressive provenance remains explicit; strict local validation and all 83 tests pass"
+  ],
+  "selected_artifacts": [
+    "context",
+    "testing",
+    "tasks"
+  ],
+  "dependencies": [
+    "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest"
+  ],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}

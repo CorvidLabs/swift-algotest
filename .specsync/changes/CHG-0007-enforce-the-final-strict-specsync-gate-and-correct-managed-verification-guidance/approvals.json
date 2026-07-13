@@ -1,0 +1,19 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1783976056,
+      "digest": "6410c02b62be7856b86f788940cb1fd75630a11c49191598bcd80f232a17bf5c",
+      "note": "Approved to make strict 100% SpecSync enforcement explicit while preserving the approved standard Trust profile and progressive provenance."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783976076,
+      "digest": "f8e5ac629011c1c0b25b8949bdb2ebaf3c432ba56e31cfd91c985336e0ac779d",
+      "note": "Accepted after immutable strict SpecSync workflow enforcement, corrected managed guidance, native build, and all 83 tests were verified."
+    }
+  ],
+  "reopenings": []
+}
