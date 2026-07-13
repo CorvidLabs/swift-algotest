@@ -1,6 +1,6 @@
 ---
 module: algotest
-version: 1
+version: 2
 status: active
 files:
   - Package.swift
@@ -256,3 +256,4 @@ Then assertions and snapshots report the existing balance and transaction change
 | Version | Date | Changes |
 |---------|------|---------|
 | 1 | 2026-07-12 | Initial spec |
+| 2026-07-13 | CHG-0002-correct-swift-algotest-governance-coverage-and-canonical-requirement-traceabilit: Correct Swift AlgoTest governance coverage and canonical requirement traceability after final migration review |
