@@ -27,6 +27,13 @@
       "timestamp": 1783971714,
       "digest": "fb735d2dbfdbfd524e7c16e8eefd17092e13f300991c4a1f3c230ff85c1b4522",
       "note": "Final refresh passed after accepted CHG-0002: Swift build and all 83 tests on the final canonical governance state; no runtime changes."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971824,
+      "digest": "300ca331727fecc969f63faf69f83314e95d360664f118f4e52f567ac8b5c607",
+      "note": "Final evidence refresh passed against the stable accepted successor: Swift build and all 83 tests, with no runtime changes."
     }
   ],
   "reopenings": [

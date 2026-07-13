@@ -1,6 +1,6 @@
 ---
 id: CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest
-state: verifying
+state: accepted
 type: migration
 base_commit: d16d34ad24f93c2ac4985fe8b354664f826d4c7e
 ---
