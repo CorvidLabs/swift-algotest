@@ -13,7 +13,49 @@
       "timestamp": 1783974814,
       "digest": "7c57ab487487fe9b3cfdb3603f72dbcecf24aa5473be40a02cd9a1b02e03fad2",
       "note": "Frozen-resolution lane verified without changing Package.resolved: Swift builds, all 83 tests pass, strict SpecSync remains 100 percent, and no source, test, dependency, API, or canonical requirement changes remain."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783975654,
+      "digest": "085bb08ce241d7b13acd4823a8c4daaf7154cfc2d3a3850caf3009e4b471d44b",
+      "note": "Historical predecessor reaccepted only after final native verification passed. CHG-0006 explicitly supersedes its frozen-resolution implementation because that approach was not portable to a clean hosted checkout."
     }
   ],
-  "reopenings": []
+  "reopenings": [
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0005-freeze-swiftpm-dependency-resolution-in-the-algotest-verification-lane",
+      "actor": "user:0xLeif",
+      "reason": "CHG-0006 superseded the non-portable frozen-resolution implementation after clean hosted verification; refresh this predecessor evidence against the final ordered delivery while preserving its historical record.",
+      "timestamp": 1783975627,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783974814,
+        "digest": "7c57ab487487fe9b3cfdb3603f72dbcecf24aa5473be40a02cd9a1b02e03fad2",
+        "note": "Frozen-resolution lane verified without changing Package.resolved: Swift builds, all 83 tests pass, strict SpecSync remains 100 percent, and no source, test, dependency, API, or canonical requirement changes remain."
+      },
+      "prior_verification": {
+        "timestamp": 1783974806,
+        "commit": "c01dc46e440cff438a9f956d0fee7e4578f43cc3",
+        "contract_digest": "53773602029a2a7059501afbcd0f3ed5333d25d25a10d1a7a77006808c7f5024",
+        "workspace_digest": "163cafdfbba97e0911dd7b1c4f7289937c865997d004c00905a1ae5cff7a70bb",
+        "acceptance_input_digest": "96aa7da80392871c4307845a77cd53322f98c2c57d73f68053ede48d0d65ac3f",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "96aa7da80392871c4307845a77cd53322f98c2c57d73f68053ede48d0d65ac3f",
+      "current_acceptance_input_digest": "a2b8ff54fcc47cb05aec09ee8559a3685f61b74070065725d72593fa95ae195e"
+    }
+  ]
 }
