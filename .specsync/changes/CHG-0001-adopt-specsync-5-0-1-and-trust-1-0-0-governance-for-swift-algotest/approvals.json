@@ -97,6 +97,40 @@
       },
       "stale_acceptance_input_digest": "ef8de82055fd39d9ab4c2e3d9f5631ead0e7e9b4562b0d4d5a62da44f0d06a47",
       "current_acceptance_input_digest": "2329733b75fbb4be3b0d6222e252b871fa9c37e5595db04e8439c9d78c0406a0"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "The accepted semantic successor completed its deduplicated canonical refresh; renew the original migration evidence once against the final delivery state.",
+      "timestamp": 1783971795,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783971714,
+        "digest": "fb735d2dbfdbfd524e7c16e8eefd17092e13f300991c4a1f3c230ff85c1b4522",
+        "note": "Final refresh passed after accepted CHG-0002: Swift build and all 83 tests on the final canonical governance state; no runtime changes."
+      },
+      "prior_verification": {
+        "timestamp": 1783971707,
+        "commit": "cb598078bd585a84da34fbe06058b37790f05579",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "08391fd78bf85803ca9f4d2944d072d32dbe1e5b555ea01a4da74800f45896b8",
+        "acceptance_input_digest": "2329733b75fbb4be3b0d6222e252b871fa9c37e5595db04e8439c9d78c0406a0",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "2329733b75fbb4be3b0d6222e252b871fa9c37e5595db04e8439c9d78c0406a0",
+      "current_acceptance_input_digest": "a0960b61681a9411e6f8ea56394b3873b3c7b49c51cf8cd3e1bea5b0abe8c834"
     }
   ]
 }

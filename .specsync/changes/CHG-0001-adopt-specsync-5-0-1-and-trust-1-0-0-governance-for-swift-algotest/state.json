@@ -5,11 +5,11 @@
   "title": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for Swift AlgoTest",
   "description": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for Swift AlgoTest",
   "kind": "migration",
-  "state": "accepted",
+  "state": "verifying",
   "canonical_applied": true,
   "base_commit": "d16d34ad24f93c2ac4985fe8b354664f826d4c7e",
   "created_at": 1783885270,
-  "updated_at": 1783971714,
+  "updated_at": 1783971795,
   "affected_specs": [],
   "affected_paths": [
     "Sources/",

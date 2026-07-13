@@ -13,6 +13,13 @@
       "timestamp": 1783971680,
       "digest": "c1759bc481f0934dd34cf39629dc5984fa871e71133cd4871e45a949e42d1fe5",
       "note": "Native verification passed: Swift build and all 83 tests; strict SpecSync reports 19/19 files, 1992/1992 LOC, 174/174 exports, zero warnings, and complete evidence for REQ-algotest-001 through REQ-algotest-004."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1783971786,
+      "digest": "406a7b9c4f2346a946b70a0eb59752927ab04d922d46f12911c64ef6a4484e58",
+      "note": "Deduplicated canonical requirements verified: strict 100% SpecSync coverage, all 83 Swift tests, and complete evidence for the four stable requirements."
     }
   ],
   "reopenings": [
