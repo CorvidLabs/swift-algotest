@@ -20,6 +20,13 @@
       "timestamp": 1783976375,
       "digest": "9ca4d74bde46fca59db0b57215816a5ac1e632a2abe38d0e7964bebf27f2683e",
       "note": "Accepted after the strict SpecSync workflow, pinned Fledge prerequisite, and all 83 native tests passed together."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784417308,
+      "digest": "6cedfcfb27fb93b3d9634cbe05ed38ef5212e6e81a053531ba28b58efd48a626",
+      "note": "Re-acceptance with the Trust 1.1.1 and SpecSync 5.1.1 pins; canonical deltas were already integrated and were not replayed."
     }
   ],
   "reopenings": [

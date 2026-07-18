@@ -13,6 +13,13 @@
       "timestamp": 1783976345,
       "digest": "ff99d2ba1e6665b9566d75dae9fed4a2cfdbfd26d3e21fb8fb769574c3f55ed9",
       "note": "Accepted after the pinned-runner dependency correction and all 83 native tests passed with strict lifecycle inputs unchanged."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784417336,
+      "digest": "035ba6dbc2e6996d2712cd349b04966ee35b924d22a5225165d1967dfdd55994",
+      "note": "Re-acceptance with the Trust 1.1.1 and SpecSync 5.1.1 pins; canonical deltas were already integrated and were not replayed."
     }
   ],
   "reopenings": [

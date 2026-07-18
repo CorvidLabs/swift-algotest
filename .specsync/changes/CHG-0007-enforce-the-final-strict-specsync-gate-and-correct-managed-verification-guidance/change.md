@@ -1,6 +1,6 @@
 ---
 id: CHG-0007-enforce-the-final-strict-specsync-gate-and-correct-managed-verification-guidance
-state: verifying
+state: accepted
 type: bug_fix
 base_commit: eface86b98a07d460e406d0a6cd1d253465f5d77
 ---

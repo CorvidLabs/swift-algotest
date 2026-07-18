@@ -1,9 +1,24 @@
 {
-  "timestamp": 1783976332,
-  "commit": "824c01da7c3115a948613c3983dfef6f491ca254",
+  "timestamp": 1784417322,
+  "commit": "239b4395646511cd5092fd7b92070306e8be5681",
   "contract_digest": "0bb44d66e7327880d424c4504df0db05398bc91a4d90293545765eb94eaf4be1",
-  "workspace_digest": "43d07298f36aedeab16b19b1ae5b4f830f66e205d4c170179ce48d3e40014148",
-  "acceptance_input_digest": "037e2998a068b8546aa501d40ead3b8ae58939fe120f9a50fcfd6fc728325dd8",
+  "workspace_digest": "6ff8b043d71d39e0709208313c27a4c90162123a5da297fa45f4dac8d813f3ea",
+  "acceptance_input_digest": "ee59ac92b074ec5ede5e868cf0ef73c6219c5439412ac5ab50ead44c637f8bd8",
+  "acceptance_manifest": {
+    "schema_version": 1,
+    "entries": [
+      {
+        "path": ".github/workflows/trust.yml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "68c7c63642ba5b353317a8fba9ba90e125c90d5ee859baf7f1a102a2cb2a5b7a",
+        "entry_digest": "de40f57bed10dd9e75d2144934c8aaeed49a6ce286eb793f7d0debec623045be",
+        "owners": [
+          "@exact:delivery"
+        ]
+      }
+    ]
+  },
   "passed": true,
   "commands": [
     {
