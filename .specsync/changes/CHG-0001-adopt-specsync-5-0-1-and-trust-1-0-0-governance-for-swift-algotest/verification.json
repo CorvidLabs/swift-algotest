@@ -1,9 +1,514 @@
 {
-  "timestamp": 1783976390,
-  "commit": "824c01da7c3115a948613c3983dfef6f491ca254",
-  "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
-  "workspace_digest": "43d07298f36aedeab16b19b1ae5b4f830f66e205d4c170179ce48d3e40014148",
-  "acceptance_input_digest": "60ed3611dd88c2ad3e151a4eef9a625ec30648e4797618c845028b14ea50d3f5",
+  "timestamp": 1784417238,
+  "commit": "239b4395646511cd5092fd7b92070306e8be5681",
+  "contract_digest": "d729963181a7b68ad67fc9b96b6654849fbcbbd5d21a09bfdc98fff48d09e7b3",
+  "workspace_digest": "6ff8b043d71d39e0709208313c27a4c90162123a5da297fa45f4dac8d813f3ea",
+  "acceptance_input_digest": "585a89382a455c66472b51bcfda859279ee133f0f6a198ce0bfa9d1c77ee30b2",
+  "acceptance_manifest": {
+    "schema_version": 1,
+    "entries": [
+      {
+        "path": ".attest.json",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "2581fe52873327db0bbac357a5102a0dbb18a1eea5a690b7b75eaa571e50cf65",
+        "entry_digest": "2904a18e18582f191a1d359d16e7bc61a7596ac77f62e55a94de56b3da8c796e",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".augur.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "17f6ad5b84b4db012f0e3f398a96a478c1324fd47e72e1dd2a13c7cf9a432983",
+        "entry_digest": "bac13c952da05292bdd0af5849aad9d9def3ae5afc830fa42b6914b2fd874beb",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".github/SUMMARY.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "d47fdd659e8326f1d53be1bf530e595c210c62148798d209d3a04e33c854ead5",
+        "entry_digest": "41e7eac020ac37b52437a9f29719d424fb10e4182799c854c3c11306bb0176a1",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".github/workflows/docs.yml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "fb1ae6ab11fa5cf7d825fc811f8b189281f6d78f27da223455c1ac5a8d6b209a",
+        "entry_digest": "6342164f258694dcee4761ecb43cdfb0ae612ad85a142ceac46c419d9936064a",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".github/workflows/macOS.yml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "b1b28c21ec0458b8112160cf54cf70cc1cb0243a6612e85e1ec4084c470fdedc",
+        "entry_digest": "cc28bdd3ded6e6032d4086b8e6e1a1d2ba9462543bc59832e19be147d9a1cf49",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".github/workflows/trust.yml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "68c7c63642ba5b353317a8fba9ba90e125c90d5ee859baf7f1a102a2cb2a5b7a",
+        "entry_digest": "de40f57bed10dd9e75d2144934c8aaeed49a6ce286eb793f7d0debec623045be",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".github/workflows/ubuntu.yml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "4687d69ce7b533ec29763c8c705954c9a5136412a10561790ae19a14ad5bdf50",
+        "entry_digest": "6be049c60789fcb05b6c68872ba64127ed748cbbb083e418f9ea05ea41593cdd",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/.gitignore",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "a505253bd2fdfb84f8121e89e48bbc67144082b5a88f439ee6acfb45424799b0",
+        "entry_digest": "ec3b8bd021ac6ac36ddfba3d0d6b84535be8074b917e9bffa050216e422d1792",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/adoption-report.json",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "b843bfc6663b40faeb459bf8c241d298467ecaa530c4c93a0ccbf344f0eef594",
+        "entry_digest": "46c08958e45386798073b92110764cac18e7b45f24103d6ba265335fc7ebc206",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/config.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "73de5bc8fdc419a5cd499845e040e3ec687f0ed7eb1dcbaa0777e0caf204e883",
+        "entry_digest": "5ebdc88fc9417e9faf562ad7da3c042f99e8b2808cdf50d99790df44abdfa02f",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/registry.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "481c5a82e4d4128721c3f01e1e18f285e1c53f153a66d4c3b2c3bef949736482",
+        "entry_digest": "9b0e73088a401b7f4986240aa852fc40b76d134ad44ec61b0e7ece154dd2b71e",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/sdd.json",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "b27771bb19a4cca0ff23e3e54a9e7bbf716c3cedd2981c37d9db34840422a851",
+        "entry_digest": "e5439922f079bd982964fc85205fc139869580d6d2afba4a9ce37fe5280e682d",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".specsync/version",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "23b6867924dfeb9cf532753438dc919669bf93ad88215e11c15630a4acbf4299",
+        "entry_digest": "339b5f88be30302336707baa5dab61fd4b324d04e495d3bb772cf893fb4f73bc",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": ".trust.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "5dca7da62a1750b73b35f350d20d74b8490b14fae6a0bea49922d509d9df43b1",
+        "entry_digest": "d57ac56f4ba0edf2d9bc70180c2d2d71cff6fe7980a363acddea2aa6648b207f",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "AGENTS.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "e652193a40be30f33b2c8d5d5b0a76d9ed1c8c78123c24243e77cfa9586cf700",
+        "entry_digest": "bddd5f85f65bfac86acf8b6e5f4ae0e375b2da5d8e75319972ce79677501c958",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "Package.resolved",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "316d09c360745bbc3587c5b2031d652a37693506c28bea420a0d6e02fb82971a",
+        "entry_digest": "584fd2049ecf691e6c00ec4b0d3c8e2e9342ef6af8de5253207e365d925be2f2",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "Package.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "a68cc91f954fe22efa00058f99c62fd56f7d95b43734517a2ebf2e3bb2fab523",
+        "entry_digest": "59e67c214184e65c961e56abc1b86a95c4f0737ebb3da6c83f2da596f2127b74",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Accounts/AccountFactory.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "2c79b398c5fff78233def09d72bdb58e80feddd3fffff1dc66825c5325b9dc0c",
+        "entry_digest": "e058fcae6df96b36c1ef23baae70f5a99883d670bea5897e186d22156ec4f713",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Accounts/AccountPool.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "671cf403c49b8e5cafe23195f997259c3ed4335794fcc87d7c785a1cc4bcf26d",
+        "entry_digest": "71d0d6d89f640766fdb0978b6a67466e24f750d41c53c48775360c289696bfb5",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Accounts/FundedAccount.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "e34d22f40e20ddf5f7d5dc923ff6253a820bc594f42ff07b9d6ac1560c8258f2",
+        "entry_digest": "f5e9960da47b88a5c49b8b301a4a6a9a156255e3cb2b69aad4d44517cbb9fae1",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/AlgoTestError.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "ea1d757295bae5b7b56d41845426af5da2715b78412680dbdb7c4e799bacdea3",
+        "entry_digest": "eafa743dd9094b15b6415f1e38c5af0a9a646d4d593ad25d262ec655a1251d05",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Assertions/AlgorandAssertions.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "b2a59df02cf589a9bd37ffe2fbf0034855bd5a17507c389cb0f7123673577d01",
+        "entry_digest": "9138eece1b4b6f0cec8640aec3919bd69f18e2229898b85f1e891619c61469d3",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Assertions/AssetAssertions.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "f5c2105f01fa81898e90c16b78d35c97fd10dba291f695c699a34d4528bc86dd",
+        "entry_digest": "3f6b39460b25d8a6668d887e63757fb0a3e94e48aaaf92cd829c5830480e5caa",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Assertions/BalanceAssertions.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "baec3562063ece7d3494e05f5f2f7cb1f2836d96a754637dcac3cc1361d3c458",
+        "entry_digest": "b0a835d966371e01d35a9b52a3b734daff266f3621411ca88a5579c3f0ffe72c",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Assertions/TransactionAssertions.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "0485e175f4eb0ce6e88f61b7955e8ce81201f0155ec7d5e1d479b16f16c2eeff",
+        "entry_digest": "15033064de6b5d7cac2d4dca498e432d6b67d5df0f05942b7d71391efbfef032",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Mocking/MockAlgodClient.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "ac73552f070e2efd949bd243607ec9c89cd33102161bf1422350628c1bae64ef",
+        "entry_digest": "e2b4371055ab1b0630678c4dff049656c65e9d86d8697faab2db4e8a50cec7b2",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Mocking/MockIndexerClient.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "391db8457905ce93b983e08f90d758d2547dbac38555c2c71607a64a2de7ca08",
+        "entry_digest": "c7591b65fce7c629597f5b8827dee738fb92c3179a7f1d53df4556bd592592db",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Mocking/MockResponses.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "b01a63350814b5d5beeae0c396b12376122c2c374868f690f55718e662705b90",
+        "entry_digest": "eb59d5d505c2d2cde56b5e8ad6a36d7e69765c6b816603a3cc0add9dc548a8b7",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Sandbox/LocalSandbox.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "952ef3a93e5c95ba6e56376e7f95dda480509ca175cef912a1f56725d69c4acd",
+        "entry_digest": "6d883aa4f6d98eec66b05ceb14626cc78b3809494429cd94d69886221e51dc91",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Sandbox/Sandbox.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "7e01c3ebbb558c7f1dd4bb62fc6e427f753740ce9ca37136bf0b32ec246e80a1",
+        "entry_digest": "e7e7cc729c703f4a92f39ec7d5edef2c4ed2a5f0c21e8f0f21e1a739e841f14d",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Sandbox/SandboxState.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "de14af706f2cdf52391272c80808862cdc825a926f53c6b99cab3bbc5ce6f6fe",
+        "entry_digest": "f04d0106aaab5c1ecbaffd66ea561b5da7ba282a086c13b29ba31c83bcc1be6e",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Snapshots/SnapshotCapture.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "6367872b19e5df3fa1c31d1396ae49cd82f96373fb9ed3bd293fafd15752f13b",
+        "entry_digest": "8e60f41c7c9f2902d02184942b2e9de02ed4be70e6b9ab52b631bd93c4729797",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Snapshots/SnapshotStore.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "0e6476a60860977e028061f7a32dcdf063c9258d47141ce0c010e64c40aa18cf",
+        "entry_digest": "ee4289401d64bfbf981200dc358ec3f22a67f8766ae5a6ed99a24f4baa97a524",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Snapshots/StateSnapshot.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "0be02afa3dc01e7673aa5b4e797d734c72f652b49b83e62dd710b038e5aab4b0",
+        "entry_digest": "6f03eafa0345bd02697acce62377dd7db5213aeed9cef13849094789e8c2f19b",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Transactions/TestTransactionBuilder.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "14025d16f669aa4acd5fdd93e57351ff7d26036de6e9f46393e2b70a7856be6e",
+        "entry_digest": "6a2121179129961fe43cff2986872055bf509d6e39bee3ef9728e503736c73ed",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Sources/AlgoTest/Transactions/TransactionScenarios.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "40667bbb12fbde946704e1ac3aeedec6edb110bab5d280a38584adc3466cfc44",
+        "entry_digest": "cdb118bf26f62326fa81b10b16d04cdc0bb476e0add6da790ca766486741c458",
+        "owners": [
+          "algotest"
+        ]
+      },
+      {
+        "path": "Tests/AlgoTestTests/AccountTests.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "d8895fa9d6db84bd4772daa5e07bf2a659bee05a6bcbfdf546df0dddd961d07b",
+        "entry_digest": "44e1486b7d18b943daea507057f2698c46f476cd8f4d8d63969630e3e4a41813",
+        "owners": [
+          "@exact:test"
+        ]
+      },
+      {
+        "path": "Tests/AlgoTestTests/AssertionTests.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "9bc579a8330a85c4e42e8d1c2fc93bd6deb2330886be49abd5287f2590346c0c",
+        "entry_digest": "1d44165bec9c1c1d2247237a30617459c0da7e8c22c4cf9a6711a03929686724",
+        "owners": [
+          "@exact:test"
+        ]
+      },
+      {
+        "path": "Tests/AlgoTestTests/ErrorTests.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "6e9372da39b9a939f82249582b0d7f7c9219c82fae4d5cc40ce24e3816c21d45",
+        "entry_digest": "82c92efa8a7e7327419a59047ec8967fb9df14ecd753cb235e12824d002925bf",
+        "owners": [
+          "@exact:test"
+        ]
+      },
+      {
+        "path": "Tests/AlgoTestTests/IntegrationTests.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "25dd588e4b0adb71b9878e987a4df235ce1733dc8936e73a0d7bfce01fba3207",
+        "entry_digest": "338327b819defc1f8ac5fbd4d6558bf6cd2ad8acf8543f8490b6282edfe50dbd",
+        "owners": [
+          "@exact:test"
+        ]
+      },
+      {
+        "path": "Tests/AlgoTestTests/MockingTests.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "eeca15aace7890bde71cfc56a36d1de37dbd0e22fa0896724046590584f51533",
+        "entry_digest": "f3d2691f22a0e928ad3082b14aa7839c2fbe920b57deab1e9c3ad65e95d26d3a",
+        "owners": [
+          "@exact:test"
+        ]
+      },
+      {
+        "path": "Tests/AlgoTestTests/SandboxTests.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "bbf684fed17d36111ce2a76a5257f74b08051887ee2a3e255670e0ec6663cd60",
+        "entry_digest": "e0b45a9301256dc7686f23d8234f965851c8e1a9eaba0169fe65a4d0036da097",
+        "owners": [
+          "@exact:test"
+        ]
+      },
+      {
+        "path": "Tests/AlgoTestTests/SnapshotTests.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "eeded35c2a0b16b8a375041e79764019fd7295f87757460946919ecbc012a03e",
+        "entry_digest": "3744fed93070e45188a99e9c420cce9f0ebe299c9803bef5835c6d72fb7d217e",
+        "owners": [
+          "@exact:test"
+        ]
+      },
+      {
+        "path": "Tests/AlgoTestTests/TransactionTests.swift",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "0a5e1781ea86309ef4d51f43b373cd834efbbc9d5ebc0648176581a2364c34f6",
+        "entry_digest": "3f211af0d0940cb3618229a50a82ea2065f40ecdc8f9b8249b66642794eb31f4",
+        "owners": [
+          "@exact:test"
+        ]
+      },
+      {
+        "path": "fledge.toml",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "0985474edc9ea3a768ee70b0bdf0ce832a270e452f9176618c7bcdce269668e4",
+        "entry_digest": "d2536735131407b216d623fb32dc4a85a1ed728e58bac8c79493fe3dc98303b1",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "specs/algotest/algotest.spec.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "8d97d76cf8d50aaa2f102c462bf7cdc7e4363cfc930ed7fcb74ec509719215a0",
+        "entry_digest": "afe8d1ddf30b971619a90feefe393f4b91158db777effac8cb242c4148864185",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "specs/algotest/context.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "5191ff4ea1e9700830b0a0e7c875b6f98d950b974f17ea8fa55432633fc2968b",
+        "entry_digest": "170530d3f6f696dbed824b5ede3a2d9465a3bac1638543d6b194c1d204b471fa",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "specs/algotest/requirements.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "7d58513ae40af6a9ade80f5ef4e949f460a30413be32f739d9fbb7d37f515e43",
+        "entry_digest": "ea3ec10e4da5481f7ed5aabad96fbea27487699a45dcf922f4a277ef40a7c428",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "specs/algotest/tasks.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "b1a83a52a7e3214ec7d0ae47b238cd34bc54d63ff7c43cbdc24bf90090488a86",
+        "entry_digest": "eebffeea0380c7428706c8276547bdef7d3ba13c127b13e4d383f387edf7c12b",
+        "owners": [
+          "@exact:delivery"
+        ]
+      },
+      {
+        "path": "specs/algotest/testing.md",
+        "kind": "file",
+        "mode": 33188,
+        "payload_digest": "fc76e2fc8ab275d2df59f3bfa0ddb4ba432bfc292e0cc3f0716fb9094ebc8446",
+        "entry_digest": "174e972326e98178e5b6d3797e52e5563fbae4cbd82b0cc353a5a8647431c1dc",
+        "owners": [
+          "@exact:delivery"
+        ]
+      }
+    ]
+  },
   "passed": true,
   "commands": [
     {

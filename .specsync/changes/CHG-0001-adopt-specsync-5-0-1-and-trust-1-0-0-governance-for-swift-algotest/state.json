@@ -9,7 +9,7 @@
   "canonical_applied": true,
   "base_commit": "d16d34ad24f93c2ac4985fe8b354664f826d4c7e",
   "created_at": 1783885270,
-  "updated_at": 1783976399,
+  "updated_at": 1784417260,
   "affected_specs": [],
   "affected_paths": [
     "Sources/",
@@ -40,6 +40,179 @@
     "docs"
   ],
   "dependencies": [],
+  "acceptance_owner_corrections": [
+    {
+      "schema_version": 1,
+      "sequence": 1,
+      "path": "Sources/AlgoTest/Accounts/AccountFactory.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416401
+    },
+    {
+      "schema_version": 1,
+      "sequence": 2,
+      "path": "Sources/AlgoTest/Accounts/AccountPool.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416538
+    },
+    {
+      "schema_version": 1,
+      "sequence": 3,
+      "path": "Sources/AlgoTest/Accounts/FundedAccount.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416558
+    },
+    {
+      "schema_version": 1,
+      "sequence": 4,
+      "path": "Sources/AlgoTest/AlgoTestError.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416583
+    },
+    {
+      "schema_version": 1,
+      "sequence": 5,
+      "path": "Sources/AlgoTest/Assertions/AlgorandAssertions.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416608
+    },
+    {
+      "schema_version": 1,
+      "sequence": 6,
+      "path": "Sources/AlgoTest/Assertions/AssetAssertions.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416635
+    },
+    {
+      "schema_version": 1,
+      "sequence": 7,
+      "path": "Sources/AlgoTest/Assertions/BalanceAssertions.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416665
+    },
+    {
+      "schema_version": 1,
+      "sequence": 8,
+      "path": "Sources/AlgoTest/Assertions/TransactionAssertions.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416696
+    },
+    {
+      "schema_version": 1,
+      "sequence": 9,
+      "path": "Sources/AlgoTest/Mocking/MockAlgodClient.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416730
+    },
+    {
+      "schema_version": 1,
+      "sequence": 10,
+      "path": "Sources/AlgoTest/Mocking/MockIndexerClient.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416764
+    },
+    {
+      "schema_version": 1,
+      "sequence": 11,
+      "path": "Sources/AlgoTest/Mocking/MockResponses.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416801
+    },
+    {
+      "schema_version": 1,
+      "sequence": 12,
+      "path": "Sources/AlgoTest/Sandbox/LocalSandbox.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416839
+    },
+    {
+      "schema_version": 1,
+      "sequence": 13,
+      "path": "Sources/AlgoTest/Sandbox/Sandbox.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416879
+    },
+    {
+      "schema_version": 1,
+      "sequence": 14,
+      "path": "Sources/AlgoTest/Sandbox/SandboxState.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416921
+    },
+    {
+      "schema_version": 1,
+      "sequence": 15,
+      "path": "Sources/AlgoTest/Snapshots/SnapshotCapture.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784416966
+    },
+    {
+      "schema_version": 1,
+      "sequence": 16,
+      "path": "Sources/AlgoTest/Snapshots/SnapshotStore.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784417015
+    },
+    {
+      "schema_version": 1,
+      "sequence": 17,
+      "path": "Sources/AlgoTest/Snapshots/StateSnapshot.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784417076
+    },
+    {
+      "schema_version": 1,
+      "sequence": 18,
+      "path": "Sources/AlgoTest/Transactions/TestTransactionBuilder.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784417133
+    },
+    {
+      "schema_version": 1,
+      "sequence": 19,
+      "path": "Sources/AlgoTest/Transactions/TransactionScenarios.swift",
+      "module": "algotest",
+      "actor": "user:0xLeif",
+      "reason": "The historical definition omitted the canonical owner of the already-scoped input.",
+      "timestamp": 1784417192
+    }
+  ],
   "answers": {
     "architecture_risk": "yes",
     "public_contract": "no"

@@ -69,6 +69,146 @@
       "timestamp": 1783976399,
       "digest": "fa5048bbc78c343bfd0258d89775c8fcf4371a2e9fbf54770319b584425cb1a4",
       "note": "Accepted after the complete hosted dependency setup, strict SpecSync gate, and all 83 native tests passed on the final migration tree."
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416412,
+      "digest": "0c68a56185bdfa80a03d8a1d112d92008c6a3da6426dacf0b685c21f2080f40a",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416541,
+      "digest": "23b09b2b1e13ebb8026f4309b16fab50bf3177eaddda77461e7a74e18beff236",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416562,
+      "digest": "c2826006f4c2d02b36428cc58b1f1158a4a9da18ff2e27df663c80f27dd0dbd0",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416588,
+      "digest": "b8a467d2a2441b697d99b2698ef578a68045e6704b5a892e481fe747481e9403",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416614,
+      "digest": "7e9d9fb0b5125be5b123a87b29d4ac1b40a46a0fe4977ee838cb90b48efcb7f4",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416643,
+      "digest": "eee34fbb1107b13fbb10a6ebf07f7df74bcc2a66125571c40ea368d76d21ae41",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416673,
+      "digest": "0680091336db8446e88f7fc333040fdb92e9e202fc7889585cccffa957adcf57",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416705,
+      "digest": "0908d479e02072e5c243c15a021d37a9af2685dba128227fe345cf4c39fc390c",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416741,
+      "digest": "baebf328da23e5fe08ae016944f10c10ffb52d0acbefd03d9254a03ef24821dd",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416775,
+      "digest": "9a61edb8c3ed78593a08ece6fff884d2d3ae3bffceac2fb3a70667ac4a8d40c4",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416813,
+      "digest": "b1f8ac9062412fb4a8299f87da9695287730083fb803ec8de494f49d105248f9",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416852,
+      "digest": "25e82450f67ea4cb6e65e732b1fbcfa8657b66d988b0fce29a622a5774b365af",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416893,
+      "digest": "0aa653ce591575d971b11df506ac2bdc684a1533b1b87ed1cbe38b09914fc624",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416936,
+      "digest": "7a7baab2c241e62c924655c33bdf33b5820d528ae18cbb16fcdf3e45e17b1173",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784416983,
+      "digest": "49f18f8ad75939a000f682fb66c3f08eab167b389c3fce070092d598103751cc",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784417034,
+      "digest": "c401add961d7d1170872c6272c7d315bc267050bfae14e55835d58dc66c7be30",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784417097,
+      "digest": "5973fbe615eca53a8aa122b0af846e331b63815459bb13eecfdb3bee90b40fa1",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784417155,
+      "digest": "998aa2d06a990a6f3a8fdde6d24261f48aefce19516c6b6690e1730663417e6e",
+      "note": null
+    },
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784417218,
+      "digest": "d729963181a7b68ad67fc9b96b6654849fbcbbd5d21a09bfdc98fff48d09e7b3",
+      "note": null
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784417260,
+      "digest": "8ad6602513513c9ebaa5bae28808e48f1c4e39ac23340f89343476e2fbd16f8e",
+      "note": "Re-acceptance with canonical ownership correction for AccountFactory.swift; canonical deltas were already integrated and were not replayed."
     }
   ],
   "reopenings": [
@@ -343,6 +483,40 @@
       },
       "stale_acceptance_input_digest": "4139cfa537503de061e3df748cfec512edbe835fd997a8fef9050c113f9cdb51",
       "current_acceptance_input_digest": "60ed3611dd88c2ad3e151a4eef9a625ec30648e4797618c845028b14ea50d3f5"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "Trust 1.1.1 and SpecSync 5.1.1 pins changed governed delivery inputs; accepted verification is stale.",
+      "timestamp": 1784415714,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783976399,
+        "digest": "fa5048bbc78c343bfd0258d89775c8fcf4371a2e9fbf54770319b584425cb1a4",
+        "note": "Accepted after the complete hosted dependency setup, strict SpecSync gate, and all 83 native tests passed on the final migration tree."
+      },
+      "prior_verification": {
+        "timestamp": 1783976390,
+        "commit": "824c01da7c3115a948613c3983dfef6f491ca254",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "43d07298f36aedeab16b19b1ae5b4f830f66e205d4c170179ce48d3e40014148",
+        "acceptance_input_digest": "60ed3611dd88c2ad3e151a4eef9a625ec30648e4797618c845028b14ea50d3f5",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "60ed3611dd88c2ad3e151a4eef9a625ec30648e4797618c845028b14ea50d3f5",
+      "current_acceptance_input_digest": "8a8e6a0f606a41e57a54b83a893499aa8d1459fd3beea18625cd2e8ab999b3de"
     }
   ]
 }
