@@ -343,6 +343,40 @@
       },
       "stale_acceptance_input_digest": "4139cfa537503de061e3df748cfec512edbe835fd997a8fef9050c113f9cdb51",
       "current_acceptance_input_digest": "60ed3611dd88c2ad3e151a4eef9a625ec30648e4797618c845028b14ea50d3f5"
+    },
+    {
+      "schema_version": 1,
+      "change_id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-algotest",
+      "actor": "user:0xLeif",
+      "reason": "Trust 1.1.1 and SpecSync 5.1.1 pins changed governed delivery inputs; accepted verification is stale.",
+      "timestamp": 1784415714,
+      "from_state": "accepted",
+      "to_state": "verifying",
+      "superseded_approval": {
+        "gate": "acceptance",
+        "actor": "user:0xLeif",
+        "timestamp": 1783976399,
+        "digest": "fa5048bbc78c343bfd0258d89775c8fcf4371a2e9fbf54770319b584425cb1a4",
+        "note": "Accepted after the complete hosted dependency setup, strict SpecSync gate, and all 83 native tests passed on the final migration tree."
+      },
+      "prior_verification": {
+        "timestamp": 1783976390,
+        "commit": "824c01da7c3115a948613c3983dfef6f491ca254",
+        "contract_digest": "11d671fe260caa50ada43e16a68870b9e68fac05a91e080be870af19e8024c93",
+        "workspace_digest": "43d07298f36aedeab16b19b1ae5b4f830f66e205d4c170179ce48d3e40014148",
+        "acceptance_input_digest": "60ed3611dd88c2ad3e151a4eef9a625ec30648e4797618c845028b14ea50d3f5",
+        "passed": true,
+        "commands": [
+          {
+            "command": "fledge lanes run verify",
+            "success": true,
+            "exit_code": 0
+          }
+        ],
+        "requirement_ids": []
+      },
+      "stale_acceptance_input_digest": "60ed3611dd88c2ad3e151a4eef9a625ec30648e4797618c845028b14ea50d3f5",
+      "current_acceptance_input_digest": "8a8e6a0f606a41e57a54b83a893499aa8d1459fd3beea18625cd2e8ab999b3de"
     }
   ]
 }

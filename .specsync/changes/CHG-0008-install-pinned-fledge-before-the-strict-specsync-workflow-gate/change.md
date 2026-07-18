@@ -1,6 +1,6 @@
 ---
 id: CHG-0008-install-pinned-fledge-before-the-strict-specsync-workflow-gate
-state: accepted
+state: verifying
 type: bug_fix
 base_commit: 824c01da7c3115a948613c3983dfef6f491ca254
 ---
