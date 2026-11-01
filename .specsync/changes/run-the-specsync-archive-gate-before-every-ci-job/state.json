@@ -6,10 +6,10 @@
   "title": "Run the SpecSync archive gate before every CI job",
   "description": "Run the SpecSync archive gate before every CI job",
   "kind": "operations",
-  "state": "draft",
+  "state": "approved",
   "base_commit": "0e0ca6f3dd26d2067a50f527ff2a1ae1b822dcba",
   "created_at": 1793541599,
-  "updated_at": 1793541605,
+  "updated_at": 1793542056,
   "affected_specs": [],
   "affected_paths": [
     ".github/workflows/docs.yml",

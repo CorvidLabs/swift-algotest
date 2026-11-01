@@ -1,4 +1,13 @@
 {
-  "approvals": [],
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "0xLeif",
+      "timestamp": 1793542056,
+      "digest": "6f84741f9cd2dfc6632830838c87a66d07da33f9c6e4787dede1bd83c6d028da",
+      "note": null,
+      "approved_delta_digests": {}
+    }
+  ],
   "reopenings": []
 }
